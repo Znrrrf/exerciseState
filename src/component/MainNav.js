@@ -13,7 +13,7 @@ const MainNav = () => {
             <Breadcrumb spacing='8px' separator={<ChevronRightIcon color='gray.500' />}>
                 <BreadcrumbItem isCurrentPage>
                     <BreadcrumbLink>
-                        <Link to="/name/*">AddName</Link>
+                        <Link to="/*">AddName</Link>
                     </BreadcrumbLink>
                 </BreadcrumbItem>
 
