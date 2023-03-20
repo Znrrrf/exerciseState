@@ -1,5 +1,24 @@
 {
     "nameList": [
-        "zeta", "pekora", "nene", "gura", "kaela"
+        {
+            "id": 1,
+            "name": "zeta"
+        },
+        {
+            "id": 2,
+            "name": "pekora"
+        },
+        {
+            "id": 3,
+            "name": "nene"
+        },
+        {
+            "id": 4,
+            "name": "kaela"
+        },
+        {
+            "id": 5,
+            "name": "anya"
+        }
     ]
 }

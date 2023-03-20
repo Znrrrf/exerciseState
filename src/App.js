@@ -13,28 +13,42 @@ function App() {
 
   axios.get('http://localhost:2000/productList')
     .then((response) => {
-      console.log(response);
+      // console.log(response.data);
+      const productList = response.data
+      console.log(productList);
     })
-    .then((err) => {
-      console.error(err)
+    .catch((err) => {
+      console.log(err.data)
     })
 
-  axios.post('http://localhost:2000/productList', {
-    "name": "sepeda",
-    "price": 7000000,
-    "src": "https://cf.shopee.co.id/file/95b9f8c008674067f25d0b71fd7356ed",
-    "qty": 1,
-    "stock": 10,
-    "id": 6
-  })
-  // const nameToAdd = "anya";
+  // axios.post('http://localhost:2000/productList', {
+  //   name: "sepeda",
+  //   price: 7000000,
+  //   src: "https://cf.shopee.co.id/file/95b9f8c008674067f25d0b71fd7356ed",
+  //   qty: 1,
+  //   stock: 10,
+  //   id: 6
+  // })
+  // .then((response) => {
+  //   console.log(response.data);
+  // })
+  // .catch((err) => {
+  //   console.log(err.data);
+  // })
+
+
   // const namesURL = "http://localhost:1000/nameList";
 
-  // axios.post(namesURL, { nameList: nameToAdd })
+  // axios.post(namesURL, {
+  //   id: 5,
+  //   name: "anya"
+  // })
   //   .then((response) => {
   //     console.log(response.data)
   //   })
-  //   .catch((err) => console.error(err))
+  //   .catch((err) => {
+  //     console.log(err)
+  //   })
 
   return (
     <div className="container">
